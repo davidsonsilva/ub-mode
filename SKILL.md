@@ -142,11 +142,12 @@ Every time you are asked to make a change follow:
 
 ## Worktree Cleanup
 
-* Find what is safe to remove, confirm nothing still in use needs it, then reclaim the disk.
+* List what looks safe to remove and why, then wait for the user's approval.
+* Never delete anything yourself; the user reclaims the disk.
 * Uncommitted work waits for a decision.
 
-## Commit and Push
+## Commit, Do Not Push
 
-* Commit often, in small ordered commits.
+* Commit often, in small ordered commits, only on a feature branch; never commit on main or master.
 * Each commit says why, what changed, and how you proved it.
-* Push to the main line at the end.
+* Never push. At the end, list the commits you made and stop for human review; the user decides when and where to push.
