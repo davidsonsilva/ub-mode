@@ -107,20 +107,20 @@ Every time you are asked to make a change follow:
 
 ## Crapper
 
-* Use the crapper tool
+* Use the crapper tool. If it is not installed, stop and ask the user; never install it yourself.
 * Reduce each function under  CRAP 10 by splitting it, by testing it, or both.
 * Consider whether case statements are worth reducing.
 
 ## Dryer
 
-* Use the dryer tool to eliminate duplication that rank 0.8 or above.
+* Use the dryer tool to eliminate duplication that ranks 0.8 or above. If it is not installed, stop and ask the user; never install it yourself.
 
 ## Mutator
 
-* Use the mutator tool
+* Use the mutator tool. If it is not installed, stop and ask the user; never install it yourself.
 * Cover the uncovered.
 * Kill the survivors.
-* Delete dead code.
+* List dead code and ask the user before deleting it.
 
 ## Refactoring
 
@@ -142,11 +142,12 @@ Every time you are asked to make a change follow:
 
 ## Worktree Cleanup
 
-* Find what is safe to remove, confirm nothing still in use needs it, then reclaim the disk.
+* List what looks safe to remove and why, then wait for the user's approval.
+* Never delete anything yourself; the user reclaims the disk.
 * Uncommitted work waits for a decision.
 
-## Commit and Push
+## Commit, Do Not Push
 
-* Commit often, in small ordered commits.
+* Commit often, in small ordered commits, only on a feature branch; never commit on main or master.
 * Each commit says why, what changed, and how you proved it.
-* Push to the main line at the end.
+* Never push. At the end, list the commits you made and stop for human review; the user decides when and where to push.
